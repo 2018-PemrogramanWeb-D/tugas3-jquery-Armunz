@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Hahaha</title>
+	<script src="jquery-1.7.2.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+    		$("#btn1").click(function(){
+        		$("div").animate({
+            		width: 'toggle'
+        		});
+    		});
+    		
+    		$("#btn2").click(function(){
+        		$("#sosmed").attr("href", "https://web.facebook.com/armu.nanta.1");
+    		});
+
+    		$("#btn3").click(function(){
+        		$("#sosmed").attr("href", "https://www.instagram.com/armunanta/");
+    		});
+
+    		$("#btn4").click(function(){
+				$("#nama").val("Hehehehehe");
+			});
+		});
+	</script> 
+	<link href="style.css" rel="stylesheet" type="text/css" >
+	<style>
+	@font-face{
+		font-family: myFirstFont;
+		src: url(fonts/Quicksand-Regular.otf);
+	}
+
+	*{
+		font-family: myFirstFont;
+	}
+	body{
+		background-color: #FFFFE0;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	</style>
+</head>
+<body>
+	<h1>Halo Dunia!</h1>
+	<button id="btn1">Klik saya</button>
+	<div class="box">
+		<p>Halo gan, disini saya akan mencoba untuk mengimplementasikan jQuery pada html.</p>
+		<p>Pertama, follow ig saya pada link di bawah ini</p>
+		<a href="https://www.instagram.com/armunanta/" id="sosmed" target="_blank"> Instagram </a>
+		<p>Anda juga bisa mengganti link menuju instagram saya menjadi link facebook saya dengan klik tombol di bawah ini</p>
+		<button id="btn2">Klik saya lagi</button>
+		<button id="btn3">Klik saya lagi untuk mengembalikan link instagram</button>
+		<p>Oke, selanjutnya silahkan coba inputkan namamu</p>
+		<p>Nama saya: <input type="text" id="nama" value="Dwi Prasetya A"> </p>
+		<button id="btn4">Submit</button>
+
+	</div>
+</body>
+</html>
